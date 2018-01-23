@@ -4,11 +4,11 @@
 
 # timedstorage
 
-> A tiny ~650b library for storing and expiring objects in localstorage.
+> A ~650b library for storing and expiring objects in localstorage.
 
-- **Small** small footprint
-- **Convenient** similar API to window.localStorage
-- **Useful** store objects that expire in localstorage
+- **Small** Tiny footprint
+- **Convenient** Similar API to window.localStorage
+- **Useful** Storage objects that expire in localstorage
 
 ## Table of Contents
 
