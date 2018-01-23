@@ -42,7 +42,8 @@
     "expiration",
     "timed"
   ],
-  "author": "Nicholas Smith",
+  "repository": "fuhton/timedstorage",
+  "author": "Nicholas Smith <fuhton@gmail.com>",
   "license": "MID",
   "devDependencies": {
     "babel-jest": "^22.1.0",
