@@ -1,5 +1,6 @@
 <p align="center">
-  🕐 📁
+  🕐 📁 timedstorage
+  <br/>
   <br/>
   <a href="https://www.npmjs.org/package/timedstorage">
     <img src="https://img.shields.io/npm/v/timedstorage.svg?style=flat" alt="npm">
