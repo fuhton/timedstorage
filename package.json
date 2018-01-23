@@ -1,6 +1,6 @@
 {
   "name": "timedstorage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Localstorage with expirations on data objects by key",
   "source": "src/index.js",
   "module": "dist/timedstorage.js",
