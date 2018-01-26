@@ -1,15 +1,15 @@
 {
   "name": "timedstorage",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Localstorage with expirations on data objects by key",
   "source": "src/index.js",
-  "module": "dist/timedstorage.js",
+  "module": "dist/timedstorage.es.js",
   "main": "dist/timedstorage.js",
   "umd:main": "dist/timedstorage.umd.js",
   "scripts": {
-    "build": "microbundle --output dist",
+    "build": "microbundle",
     "eslint": "eslint src",
-    "test": "jest",
+    "test": "npm run eslint && jest",
     "prepare": "npm t",
     "release": "npm t && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
@@ -44,7 +44,7 @@
   ],
   "repository": "fuhton/timedstorage",
   "author": "Nicholas Smith <fuhton@gmail.com>",
-  "license": "MID",
+  "license": "MIT",
   "devDependencies": {
     "babel-jest": "^22.1.0",
     "babel-preset-env": "^1.6.1",
