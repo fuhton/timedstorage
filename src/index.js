@@ -20,6 +20,9 @@ export function getItem(key) {
 }
 
 export function setItem(key, value, expiration) {
+  if (typeof value !== 'object') {
+    throw Error('Value must be an object');
+  }
   const data = Object.assign(
     value,
     { expiration: getTime() + expiration },

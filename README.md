@@ -48,19 +48,25 @@ You'll find the library on `window.timedstorage`.
 
 ```js
 import { deleteItem, getItem, setItem } from 'timedstorage';
+// the time module gives helpful shortcuts for time in milliseconds
+import * as time from 'timedstorage/time';
 
 async function getUserData() {
+  // Retrieve the item from localstorage
   let userData = getItem('user_key');
 
   if (!userData) {
     const response = await fetch('/user_endpoint');
-    userData = setItem('user_key', response, EXPIRE_IN_1_HOUR);
+    // Set the item with your key
+    // `response` (the passed value to be saved) is expected to be an object
+    userData = setItem('user_key', response, time.HOUR);
   }
 
   return userData;
 }
 
 function deleteUserData() {
+  // Delete the item by key
   return deleteItem('user_key');
 }
 ```

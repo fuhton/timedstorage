@@ -106,5 +106,10 @@ describe('timedstorage', () => {
       expect(result).toMatchObject(value);
       expect(result).toHaveProperty('expiration');
     });
+    it('should throw an error if the value is not an object', () => {
+      const expiration = new window.Date().getTime() + futureDate();
+      const result = () => setItem(key, 'value', expiration);
+      expect(result).toThrow();
+    });
   });
 });
