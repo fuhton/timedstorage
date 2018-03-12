@@ -81,7 +81,7 @@ console.log(window.localstorage.getItem('KEY_NAME'));
 
 ### Examples
 
-Soon...
+Interactive example on CodeSandbox.io - https://codesandbox.io/s/5vpn5828n
 
 ### Reporting Issues
 
