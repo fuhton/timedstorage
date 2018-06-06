@@ -34,10 +34,9 @@ const pastDate = () => {
   return currentDate.setHours(currentDate.getHours() - 2);
 };
 
-let key;
-let value;
-
 describe('timedstorage', () => {
+  let key;
+  let value;
   describe('deleteItem()', () => {
     beforeEach(() => {
       key = 'key';
@@ -108,8 +107,7 @@ describe('timedstorage', () => {
     });
     it('should throw an error if the value is not an object', () => {
       const expiration = new window.Date().getTime() + futureDate();
-      const result = () => setItem(key, 'value', expiration);
-      expect(result).toThrow();
+      expect(() => setItem(key, 'value', expiration)).toThrow();
     });
   });
 });
