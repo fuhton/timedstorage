@@ -10,6 +10,8 @@
   </a>
 </p>
 
+> Disclaimer: This is a very stable project with a very focused use-case. This project is actively used and maintained (as needed).
+
 # timedstorage
 
 > A tiny library for storing and expiring objects in localstorage.
